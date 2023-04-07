@@ -17,6 +17,7 @@ app.use(express.json())
 
 app.get('/api/userinputs/', async (req, res) => {
     //get all records
+    console.log("called")
     try {
         const allUserInputs = await UserInput.find({}).sort({ createdAt: -1 })
         res.status(200).json(allUserInputs)
@@ -39,4 +40,3 @@ app.post('/api/userinputs/', async (req, res) => {
     }
 
 })
-
