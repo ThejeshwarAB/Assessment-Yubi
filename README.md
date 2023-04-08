@@ -1,0 +1,1 @@
+Assessment project for Yubi. Developed using MERN stack.
