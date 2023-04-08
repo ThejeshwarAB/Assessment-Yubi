@@ -25,6 +25,34 @@ code {
   display: inline-block;
 }
 
+.list-item{
+  background-color: gainsboro;
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  position: relative;
+}
+
+.list-item-time{
+  font-size: smaller;
+  text-align: right;
+  position: relative;
+  top: -15px;
+  padding: 0;
+}
+
+.delete-btn{
+  text-align: right !important;
+  position: absolute;
+  font-size: larger;
+  color: red;
+  border-radius: 5px;
+  padding: 8px;
+  right: 0px;
+  top:0;
+}
+
 h3{
   font-weight: bold;
 }

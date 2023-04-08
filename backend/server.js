@@ -40,3 +40,17 @@ app.post('/api/userinputs/', async (req, res) => {
     }
 
 })
+
+
+app.delete('/api/userinputs/:id', async (req, res) => {
+    //delete one record
+    console.log("deleted")
+    const id = req.params.id
+    try {
+        const deletedInput = await UserInput.findOneAndDelete({ _id: id })
+        res.status(200).json(deletedInput)
+    }
+    catch (error) {
+        res.status(400).json({ error: error.message })
+    }
+})
